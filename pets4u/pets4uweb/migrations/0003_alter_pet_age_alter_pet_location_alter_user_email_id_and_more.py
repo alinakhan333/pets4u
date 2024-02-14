@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='user',
             name='email_id',
-            field=models.EmailField(max_length=255, null=True, unique=True),
+            field=models.EmailField(max_length=255, null=True),
         ),
         migrations.AlterField(
             model_name='user',
@@ -33,6 +33,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='user',
             name='phone_no',
-            field=models.IntegerField(null=True, unique=True),
+            field=models.IntegerField(null=True),
         ),
     ]
