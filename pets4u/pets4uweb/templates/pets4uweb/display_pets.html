@@ -1,0 +1,31 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Pets</title>
+</head>
+<body>
+    <h1>Available Pets</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Type</th>
+                <!-- Add more columns for additional fields -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for Pet in Pets %}
+                <tr>
+                    <td>{{ Pet.id }}</td>
+                    <td>{{ Pet.pet_name }}</td>
+                    <td>{{ Pet.pet_type }}</td>
+                    <!-- Add more cells for additional fields -->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
